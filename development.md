@@ -10,11 +10,15 @@ All development related topics are gathered here.
 
 ## Tools
 
-1. [Brew](https://brew.sh) package manager for macOS
-2. [Node](https://nodejs.org/en/download/) for `node` and `npm` cli.
+1. [Brew](https://brew.sh) package manager for macOS (get install script from website).
+2. Node version manager for `node` and `npm` cli in different versions.
 
     ```shell
-    brew install node
+    # Install node version manager
+    brew install mvn
+
+    # Install latest LTS version
+    nvm install --lts
     ```
 
 ## SSH Key
@@ -25,9 +29,6 @@ Create **ssh key** on macOS
 # Create new ssh key if necessary
 ssh-keygen -t rsa
 # Keep default name and enter passphrase
-
-# Add the ssh key  so that no prompt for passphrase is showing up every time the ssh key is used
-ssh-add .ssh/id_rsa
 ```
 
 Add SSH Key to  [GitHub](https://github.com/settings/ssh/new)
@@ -38,13 +39,17 @@ Copy ssh key to clipboard
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
-If passphrase is needed every time after a terminal restart update ssh `config` to use keychain
+If passphrase is needed every time after a terminal restart, update ssh `config` to use keychain
 
 ```shell
+# Add the ssh key so that no prompt for passphrase is showing up every time the ssh key is used
+ssh-add .ssh/id_rsa
+
+# Create end edit ssh config
 touch ~/.ssh/config
 ```
 
-Paste the following:
+Paste the following into the config file:
 
 ```text
 Host *
@@ -54,15 +59,15 @@ Host *
 ## Terminal
 
 1. Download [Warp](https://www.warp.dev) Terminal
-2. Login with [GitHub](github.com) for sharing
-3. Install fonts from [Nerd Font](https://www.nerdfonts.com). Using: IBM Plex Mono
+   1. Login with [GitHub](github.com) for sharing
+2. Install fonts from [Nerd Font](https://www.nerdfonts.com). Using: IBM Plex Mono
 
     ```shell
     brew tap homebrew/cask-fonts
     brew install --cask font-hack-nerd-font
     ```
 
-4. Change prompt to [starship](https://starship.rs) by running
+3. Change prompt to [starship](https://starship.rs) by running
 
     ```shell
     brew install starship
@@ -70,7 +75,7 @@ Host *
 
     <!-- TODO: config for prompt -->
 
-5. Theme Warp Terminal
+4. Theme Warp Terminal
 
     Need `.warp/themes` folder in the home directory
     <!-- TODO: Theme with colors of listing and icons -->
@@ -78,7 +83,7 @@ Host *
     mkdir -p ~/.warp/themes/
     ```
 
-6. Terminal Addons
+5. Terminal Addons
 
     ```shell
     # Better listing tool
