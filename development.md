@@ -19,6 +19,12 @@ All development related topics are gathered here.
 
     # Install latest LTS version
     nvm install --lts
+
+    # Install latest npm version for nodes
+    nvm install-latest-npm
+
+    # Optional: Change color output of nvm ls
+    nvm set-colors cgYmW
     ```
 
 ## SSH Key
@@ -64,24 +70,45 @@ Host *
 
     ```shell
     brew tap homebrew/cask-fonts
+
+    # IBM hack font
+    brew install --cask font-blex-mono-nerd-font
+
+    # Optional: Hack font
     brew install --cask font-hack-nerd-font
     ```
 
 3. Change prompt to [starship](https://starship.rs) by running
 
     ```shell
+    # Install starship
     brew install starship
+
+    # Create config for custom settings in the prompt
+    mkdir -p ~/.config && touch ~/.config/starship.toml
     ```
 
-    <!-- TODO: config for prompt -->
+    For using it when the terminal starts up add the following to the `.zshrc` file:
+
+    ```text
+    # Load starship
+    eval "$(starship init zsh)"
+    ```
+
+   <!-- TODO: 1. Starship configuration -->
 
 4. Theme Warp Terminal
 
+    To use the **Starship** prompt in **Warp** right click in the warp prompt and select **use own prompt**.  
+    Also change font to `BlexMono Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
+
     Need `.warp/themes` folder in the home directory
-    <!-- TODO: Theme with colors of listing and icons -->
+
     ```shell
     mkdir -p ~/.warp/themes/
     ```
+
+    <!-- TODO create theme for vs code theme -->
 
 5. Terminal Addons
 
@@ -101,11 +128,16 @@ Common used IDES are listed here:
 
 ### Visual Studio Code
 
-1. [Download & Install](https://code.visualstudio.com)
-2. Login with [GitHub](github.com) for sharing and settings
-3. Theme `Tokyo Night`
-4. Icons `Material Icon Theme`
-5. Plugins
+[Download & Install](https://code.visualstudio.com)
+
+To automatically load synced settings, login with [GitHub](github.com) and turn on **Settings Sync**
+
+### Changed Settings Documentation
+
+1. Editor Fonts `BlexMono Nerd Font`
+2. Theme `Tokyo Night`
+3. Icons `Material Icon Theme`
+4. Plugins
    - `Auto Rename Tag`
    - `Bash Beautify`
    - `Better Comments`
@@ -125,7 +157,7 @@ Common used IDES are listed here:
    - `SVG`
    - `SVG Viewer`
    - `Tailwind CSS IntelliSense`
-6. Terminal
+5. Terminal
    - Go *Code* -> *Preferences* -> *Settings*  
    - Search type in **Terminal**
    - Replace the `Terminal.app` with the `Warp.app` under **Osx Exec**
@@ -135,3 +167,14 @@ Common used IDES are listed here:
 
 - M1 Mac has some issues with **Native React** cli because it needs an older version of Ruby.  
   So to fix the issue with that follow the [stackoverflow](https://stackoverflow.com/questions/69012676/install-older-ruby-versions-on-a-m1-macbook) instructions with `asdf`.
+
+```shell
+# Kubernetes cli
+brew install kubernetes-cli
+
+# OpenShift cli for `oc` commands
+brew install openshift-cli
+
+# IBM cloud cli `ibmcloud`
+brew install --cask ibm-cloud-cli
+```
