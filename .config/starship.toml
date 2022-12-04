@@ -1,0 +1,118 @@
+# Inserts a blank line between shell prompts. Not working for `warp` terminal
+add_newline = true
+
+# format = """$env_var $all"""
+# Which is equivalent to
+format = """
+$env_var \
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$haskell\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+$fill\
+$docker_context\
+$kubernetes\
+$character"""
+
+# move the rest of the prompt to the right
+# right_format = """$kubernetes"""
+
+[fill]
+symbol=" "
+
+#Changethe default prompt characters because in `warp` there is a new line
+[character]
+success_symbol = ""
+error_symbol = ""
+
+# Shows an icon that should be included by zshrc script based on the distribution or os
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value](white)'
+variable = "STARSHIP_DISTRO"
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = true
+format = "on [$hostname](bold yellow) "
+disabled = false
+
+[directory]
+truncation_length = 4
+truncation_symbol = "…/"
+
+[kubernetes]
+format = '[$symbol$context_aliases$cluster/\($namespace\)](bright-blue bold) '
+disabled = false
