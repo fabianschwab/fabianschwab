@@ -15,7 +15,7 @@ All development related topics are gathered here.
 
     ```shell
     # Install node version manager
-    brew install mvn
+    brew install nvm
 
     # Install latest LTS version
     nvm install --lts
