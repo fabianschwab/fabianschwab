@@ -1,4 +1,5 @@
 # Inserts a blank line between shell prompts. Not working for `warp` terminal
+# Makes prompt indent
 add_newline = true
 
 # format = """$env_var $all"""
@@ -75,12 +76,13 @@ $time\
 $status\
 $container\
 $shell\
-$fill\
 $docker_context\
 $kubernetes\
 $character"""
 
-# move the rest of the prompt to the right
+#removed `$fill\` becasue issue with vs code terminal
+
+# move the rest of the prompt to the right not in warp
 # right_format = """$kubernetes"""
 
 [fill]

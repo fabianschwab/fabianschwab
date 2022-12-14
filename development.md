@@ -88,14 +88,14 @@ Host *
     mkdir -p ~/.config && touch ~/.config/starship.toml
     ```
 
+    Create new custom config, use a preset or copy the file `.config/starship.toml` to the local machine.
+
     For using it when the terminal starts up add the following to the `.zshrc` file:
 
     ```text
     # Load starship
     eval "$(starship init zsh)"
     ```
-
-   <!-- TODO: 1. Starship configuration -->
 
 4. Theme Warp Terminal
 
@@ -108,7 +108,34 @@ Host *
     mkdir -p ~/.warp/themes/
     ```
 
-    <!-- TODO create theme for vs code theme -->
+    Create custom theme with the [Warp Theme Generator](https://warp-themes.com) or use theme blow,
+    matching to the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night) theme.
+
+    ```text
+    accent: "#3d59a1"
+    background: "#1a1b26"
+    foreground: "#a9b1d6"
+    details: "darker"
+    terminal_colors:
+    normal:
+        black: "#616161"
+        red: "#ff8272"
+        green: "#b4fa72"
+        yellow: "#fefdc2"
+        blue: "#a5d5fe"
+        magenta: "#ff8ffd"
+        cyan: "#d0d1fe"
+        white: "#f1f1f1"
+    bright:
+        black: "#8e8e8e"
+        red: "#ffc4bd"
+        green: "#d6fcb9"
+        yellow: "#fefdd5"
+        blue: "#0054FF"
+        magenta: "#ffb1fe"
+        cyan: "#e5e6fe"
+        white: "#feffff"
+    ```
 
 5. Terminal Addons
 
@@ -144,7 +171,6 @@ To automatically load synced settings, login with [GitHub](github.com) and turn 
    - `Better TOML`
    - `Code Spell Checker`
    - `DotEnv`
-   - `Emoji`
    - `GitLens`
    - `HashiCorp Terraform`
    - `LiveShareExtensionPack`
@@ -152,10 +178,10 @@ To automatically load synced settings, login with [GitHub](github.com) and turn 
    - `MarkdownLint`
    - `NPM Intellisense`
    - `Path Intellisense`
+   - `Prettier`
    - `Prisma`
    - `Svelte for VS Code`
    - `SVG`
-   - `SVG Viewer`
    - `Tailwind CSS IntelliSense`
 5. Terminal
    - Go *Code* -> *Preferences* -> *Settings*  
@@ -165,8 +191,14 @@ To automatically load synced settings, login with [GitHub](github.com) and turn 
 
 ## More Stuff
 
-- M1 Mac has some issues with **Native React** cli because it needs an older version of Ruby.  
-  So to fix the issue with that follow the [stackoverflow](https://stackoverflow.com/questions/69012676/install-older-ruby-versions-on-a-m1-macbook) instructions with `asdf`.
+Useful tools
+
+```shell
+# podman
+brew install podman
+```
+
+Optional :
 
 ```shell
 # Kubernetes cli
