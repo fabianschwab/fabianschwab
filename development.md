@@ -159,7 +159,13 @@ Common used IDES are listed here:
 
 To automatically load synced settings, login with [GitHub](github.com) and turn on **Settings Sync**
 
-### Changed Settings Documentation
+To get the colors from the current VS Code theme, execute from command palette:
+
+```cmd
+Developer: Generate Color Theme From Current Settings
+```
+
+#### Changed Settings Documentation
 
 1. Editor Fonts `BlexMono Nerd Font`
 2. Theme `Tokyo Night`
