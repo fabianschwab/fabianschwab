@@ -165,6 +165,22 @@ To get the colors from the current VS Code theme, execute from command palette:
 Developer: Generate Color Theme From Current Settings
 ```
 
+#### Customized Settings
+
+There are some tweaks done to the users `settings.json`
+
+Hit <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>p</kbd> and type `settings.json` and hit <kbd>enter</kbd>
+
+The following properties were added:
+
+```json
+{
+    ...settings,
+    // Label short to only view the parent folder in the editor tab
+    "workbench.editor.labelFormat": "short",
+}
+```
+
 #### Changed Settings Documentation
 
 1. Editor Fonts `BlexMono Nerd Font`
@@ -193,7 +209,7 @@ Developer: Generate Color Theme From Current Settings
    - Go *Code* -> *Preferences* -> *Settings*  
    - Search type in **Terminal**
    - Replace the `Terminal.app` with the `Warp.app` under **Osx Exec**
-   - *cmd + shift + c* will open a new session in the application
+   - <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>c</kbd> will open a new session in the application
 
 ## More Stuff
 
