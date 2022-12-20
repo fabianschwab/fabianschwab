@@ -231,4 +231,10 @@ brew install openshift-cli
 
 # IBM cloud cli `ibmcloud`
 brew install --cask ibm-cloud-cli
+
+# Python version manager
+brew install pyenv
+
+# Kafka interaction cli
+brew install kcat
 ```
