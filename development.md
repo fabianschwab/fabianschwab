@@ -64,18 +64,20 @@ Host *
 
 ## Terminal
 
+In case the macOS default Terminal is used, skip the Warp Terminal related step.
+
 1. Download [Warp](https://www.warp.dev) Terminal
    1. Login with [GitHub](github.com) for sharing
-2. Install fonts from [Nerd Font](https://www.nerdfonts.com). Using: IBM Plex Mono
+2. Install fonts from [Nerd Font](https://www.nerdfonts.com).
 
     ```shell
     brew tap homebrew/cask-fonts
 
-    # IBM hack font
-    brew install --cask font-blex-mono-nerd-font
-
-    # Optional: Hack font
+    # Hack font
     brew install --cask font-hack-nerd-font
+
+    # Optional: IBM hack font
+    brew install --cask font-blex-mono-nerd-font
     ```
 
 3. Change prompt to [starship](https://starship.rs) by running
@@ -100,7 +102,7 @@ Host *
 4. Theme Warp Terminal
 
     To use the **Starship** prompt in **Warp** right click in the warp prompt and select **use own prompt**.  
-    Also change font to `BlexMono Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
+    Also change font to `Hack Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
 
     Need `.warp/themes` folder in the home directory
 
@@ -167,7 +169,17 @@ Developer: Generate Color Theme From Current Settings
 
 #### Customized Settings
 
-There are some tweaks done to the users `settings.json`
+Font for editor:
+
+```shell
+# Optional when did before to install `BlexMono Nerd Font`
+brew tap homebrew/cask-fonts
+
+# Install editor font
+brew install --cask font-fira-code
+```
+
+Add the following to te `settings.json` file.
 
 Hit <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>p</kbd> and type `settings.json` and hit <kbd>enter</kbd>
 
@@ -178,15 +190,21 @@ The following properties were added:
     ...settings,
     // Label short to only view the parent folder in the editor tab
     "workbench.editor.labelFormat": "short",
+    // Font for editor
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    // Font for terminal
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
 }
 ```
 
 #### Changed Settings Documentation
 
-1. Editor Fonts `BlexMono Nerd Font`
-2. Theme `Tokyo Night`
-3. Icons `Material Icon Theme`
-4. Plugins
+1. Integrated Terminal Font `Hack Nerd Font`
+2. Editor Font `Fira Code`
+3. Theme `Tokyo Night`
+4. Icons `Material Icon Theme`
+5. Plugins
    - `Auto Rename Tag`
    - `Bash Beautify`
    - `Better Comments`
@@ -205,7 +223,7 @@ The following properties were added:
    - `Svelte for VS Code`
    - `SVG`
    - `Tailwind CSS IntelliSense`
-5. Terminal
+6. Terminal
    - Go *Code* -> *Preferences* -> *Settings*  
    - Search type in **Terminal**
    - Replace the `Terminal.app` with the `Warp.app` under **Osx Exec**
