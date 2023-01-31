@@ -255,4 +255,7 @@ brew install pyenv
 
 # Kafka interaction cli
 brew install kcat
+
+# Pnpm - Fast, disk space efficient package manager for node
+brew install pnpm
 ```
