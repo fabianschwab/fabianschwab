@@ -229,6 +229,10 @@ The following properties were added:
    - Replace the `Terminal.app` with the `Warp.app` under **Osx Exec**
    - <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>c</kbd> will open a new session in the application
 
+## Managing dot files
+
+Using [YADM](https://yadm.io/#) for this.
+
 ## More Stuff
 
 Useful tools
@@ -258,4 +262,19 @@ brew install kcat
 
 # Pnpm - Fast, disk space efficient package manager for node
 brew install pnpm
+
+# k9s for managing clusters
+brew install k9s
 ```
+
+### k9s changes
+
+Check where the config files are located by running:
+
+```shell
+k9s info
+```
+
+Copy the `.k9s` folder into the folder of the given path e.g.: `Configuration: /Users/<username>/Library/Application Support/k9s/config.yml`
+
+The skin and the location of the logs had been changed so far.
