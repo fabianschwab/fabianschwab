@@ -20,11 +20,20 @@ All development related topics are gathered here.
     # Install latest LTS version
     nvm install --lts
 
-    # Install latest npm version for nodes
-    nvm install-latest-npm
-
     # Optional: Change color output of nvm ls
     nvm set-colors cgYmW
+
+    # Install latest npm version for node version
+    nvm install-latest-npm
+
+    # Pnpm - Fast, disk space efficient package manager for node
+    brew install pnpm
+    ```
+
+3. Maccy clipboard manager
+
+    ```shell
+    brew install --cask maccy
     ```
 
 ## SSH Key
@@ -233,6 +242,8 @@ The following properties were added:
 
 Using [YADM](https://yadm.io/#) for this.
 
+<!-- TODO: Setup and document usage -->
+
 ## More Stuff
 
 Useful tools
@@ -259,19 +270,14 @@ brew install pyenv
 
 # Kafka interaction cli
 brew install kcat
-
-# Pnpm - Fast, disk space efficient package manager for node
-brew install pnpm
-
-# k9s for managing clusters
-brew install k9s
 ```
 
-### k9s changes
-
-Check where the config files are located by running:
+### K9s for managing clusters
 
 ```shell
+brew install k9s
+
+# Check where the config files are located by running:
 k9s info
 ```
 
