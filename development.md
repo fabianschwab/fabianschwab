@@ -265,9 +265,6 @@ brew install openshift-cli
 # IBM cloud cli `ibmcloud`
 brew install --cask ibm-cloud-cli
 
-# Python version manager
-brew install pyenv
-
 # Kafka interaction cli
 brew install kcat
 ```
@@ -284,3 +281,28 @@ k9s info
 Copy the `.k9s` folder into the folder of the given path e.g.: `Configuration: /Users/<username>/Library/Application Support/k9s/config.yml`
 
 The skin and the location of the logs had been changed so far.
+
+### Python
+
+```shell
+# Python version manager
+brew install pyenv
+```
+
+**ChatGPT:** Whats the difference between `pyenv` and `python3 -m venv`?
+
+**Answer:** Both `pyenv` and `python3 -m venv` are used to create virtual environments for Python development, but they work in slightly different ways.
+
+`pyenv` init is a command used to initialize `pyenv`, which is a tool for managing multiple versions of Python on the same machine.
+Once `pyenv` is installed, `pyenv` init can be used to set up the shell integration,
+which enables `pyenv` to automatically switch the Python version based on the directory being used.
+This means that when you enter a directory that contains a Python project that requires a specific Python version,
+`pyenv` can automatically switch to that version for you. However, `pyenv` init does not create a virtual environment.
+
+On the other hand, `python3 -m venv` is a command used to create a virtual environment for Python development.
+A virtual environment is a self-contained directory that contains a specific version of Python and any necessary packages or dependencies.
+When you activate the virtual environment, any packages installed within that environment will be isolated from the global
+Python installation, which helps prevent conflicts with other projects that might require different versions of the same package.
+
+So, while `pyenv` init is used to manage multiple versions of Python on the same machine,
+`python3 -m venv` is used to create isolated virtual environments for specific projects.
