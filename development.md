@@ -306,3 +306,8 @@ Python installation, which helps prevent conflicts with other projects that migh
 
 So, while `pyenv` init is used to manage multiple versions of Python on the same machine,
 `python3 -m venv` is used to create isolated virtual environments for specific projects.
+
+```shell
+# Python package and dependency manager
+brew install poetry
+```
