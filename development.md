@@ -82,7 +82,10 @@ In case the macOS default Terminal is used, skip the Warp Terminal related step.
     ```shell
     brew tap homebrew/cask-fonts
 
-    # Hack font
+    # Install editor font
+    brew install --cask font-fira-code-nerd-font
+
+    # Optional: Hack font
     brew install --cask font-hack-nerd-font
 
     # Optional: IBM hack font
@@ -111,7 +114,7 @@ In case the macOS default Terminal is used, skip the Warp Terminal related step.
 4. Theme Warp Terminal
 
     To use the **Starship** prompt in **Warp** right click in the warp prompt and select **use own prompt**.  
-    Also change font to `Hack Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
+    Also change font to `FiraCode Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
 
     Need `.warp/themes` folder in the home directory
 
@@ -181,11 +184,11 @@ Developer: Generate Color Theme From Current Settings
 Font for editor:
 
 ```shell
-# Optional when did before to install `BlexMono Nerd Font`
+# Optional when already installed for terminal
 brew tap homebrew/cask-fonts
 
-# Install editor font
-brew install --cask font-fira-code
+# Optional when already installed for terminal
+brew install --cask font-fira-code-nerd-font
 ```
 
 Add the following to te `settings.json` file.
@@ -200,17 +203,17 @@ The following properties were added:
     // Label short to only view the parent folder in the editor tab
     "workbench.editor.labelFormat": "short",
     // Font for editor
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
     // Font for terminal
-    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.fontFamily": "FiraCode Font Mono",
 }
 ```
 
 #### Changed Settings Documentation
 
 1. Integrated Terminal Font `Hack Nerd Font`
-2. Editor Font `Fira Code`
+2. Editor Font `FiraCode Nerd Font`
 3. Theme `Tokyo Night`
 4. Icons `Material Icon Theme`
 5. Plugins
