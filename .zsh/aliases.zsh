@@ -9,6 +9,9 @@ alias ic="ibmcloud"
 # mac OS shortcuts
 # alias code="open -a 'Visual Studio Code'"
 
+# Python activate
+alias activate='source ${1:-venv}/bin/activate'
+
 # ALIAS COMMANDS
 alias grep='grep --color'
 alias kubeclr='kubectl config unset current-context'
