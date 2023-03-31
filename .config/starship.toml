@@ -1,6 +1,6 @@
 add_newline = true  # Inserts a blank line between shell prompts
 
-format = """$env_var$os$username$directory$git_branch$git_status$nodejs$python$cmd_duration$battery$fill$all"""
+format = """$env_var$os$username$hostname$directory$git_branch$git_status$nodejs$python$cmd_duration$battery$fill$all"""
 
 # move the rest of the prompt to the right
 # right_format = """$all"""
@@ -51,7 +51,12 @@ disabled = true
 show_always = true
 style_user = 'black'
 style_root = 'bold white'
-format = '[$user]($style) at '
+format = '[$user]($style) '
+
+[hostname]
+ssh_only = true
+format = '[$ssh_symbol](bold green) on [$hostname](bold blue) '
+disabled = false
 
 # Shows current directory
 [directory]
@@ -61,7 +66,7 @@ home_symbol = "~"
 style = "bold white"
 read_only_style = "197"
 read_only = "  "
-format = "[$path]($style)[$read_only]($read_only_style) "
+format = "at [$path]($style)[$read_only]($read_only_style) "
 
 # Shows current git branch
 [git_branch]

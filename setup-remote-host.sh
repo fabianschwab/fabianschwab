@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# curl -sS https://raw.githubusercontent.com/fabianschwab/fabianschwab/main/setup-remote-host.sh | bash
+
 # Install required dependencies
 sudo apt-get update && sudo apt-get install -y curl unzip fontconfig
 
