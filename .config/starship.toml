@@ -108,45 +108,124 @@ symbol = " "
 style = "bold yellow"
 symbol = " "
 
-# OS
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+
+[package]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
 [os.symbols]
-Alpine = " "
-Amazon = "󰸏 "
-Android = " "
+Alpine = " "
+Amazon = " "
+Android = " "
 Arch = " "
 CentOS = " "
-Debian = " "
-DragonFly = "󱖉 "
-Emscripten = " "
-EndeavourOS = "󰑣 "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "󱗆 "
+Garuda = "﯑ "
 Gentoo = " "
-HardenedBSD = " "
-Illumos = "󱗆 "
-Linux = "󱗆 "
-Macos = " "
-Manjaro = "󱁆 "
-Mariner = "󰼮 "
-MidnightBSD = "󰽦 "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
 Mint = " "
-NetBSD = "󰈿 "
-NixOS = "󱃾 "
-OpenBSD = " "
-OpenCloudOS = " "
-openEuler = "󰏒 "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
 openSUSE = " "
-OracleLinux = "󰂹 "
+OracleLinux = " "
 Pop = " "
 Raspbian = " "
 Redhat = "󱄛 "
-RedHatEnterprise = "󱄛 "
-Redox = "󰙨 "
-Solus = "󰻈 "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
 SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
 
 # Disable some modules that aren't needed anymore
