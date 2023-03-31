@@ -55,6 +55,7 @@ format = '[$user]($style) '
 
 [hostname]
 ssh_only = true
+ssh_symbol = ""
 format = '[$ssh_symbol](bold green) on [$hostname](bold blue) '
 disabled = false
 
