@@ -8,6 +8,7 @@ alias ic="ibmcloud"
 
 # mac OS shortcuts
 # alias code="open -a 'Visual Studio Code'"
+alias sshpub='pbcopy < ~/.ssh/id_rsa.pub'
 
 # Python activate
 alias activate='source ${1:-venv}/bin/activate'
