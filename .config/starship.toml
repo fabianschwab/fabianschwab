@@ -25,6 +25,10 @@ threshold = 50
 style = 'bold green'
 
 [[battery.display]]
+threshold = 30
+style = 'bold yellow'
+
+[[battery.display]]
 threshold = 15
 style = 'bold red'
 
