@@ -16,21 +16,27 @@ symbol = ' '
 
 [battery]
 full_symbol = ' 󱈑 '
-charging_symbol = ' 󱊤 '
-discharging_symbol = ' 󱊡 '
+charging_symbol = ' 󱊦 '
+discharging_symbol = ' 󱊣 '
 disabled = false
-
-[[battery.display]]
-threshold = 50
-style = 'bold green'
-
-[[battery.display]]
-threshold = 30
-style = 'bold yellow'
 
 [[battery.display]]
 threshold = 15
 style = 'bold red'
+discharging_symbol = " 󰂎 "
+charging_symbol = ' 󰢟 '
+
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
+discharging_symbol = " 󱊡 "
+charging_symbol = ' 󱊤 '
+
+[[battery.display]]
+threshold = 50
+style = 'bold green'
+discharging_symbol = ' 󱊢 '
+charging_symbol = ' 󱊥 '
 
 # ---
 
