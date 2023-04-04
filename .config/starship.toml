@@ -59,7 +59,7 @@ disabled = true
 
 [username]
 show_always = true
-style_user = 'black'
+style_user = 'bright-black'
 style_root = 'bold white'
 format = '[$user]($style) '
 
