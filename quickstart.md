@@ -10,7 +10,7 @@ brew install yadm
 ssh-keygen -t rsa
 ssh-add .ssh/id_rsa
 echo 'Host *
-    UseKeychain yes' > filename
+    UseKeychain yes' > ~/.ssh/config
 
 # Font
 brew tap homebrew/cask-fonts
