@@ -6,7 +6,8 @@ All development related topics are gathered here.
 2. SSH Key
 3. Terminal
 4. IDEs
-5. More Stuff
+5. Managing dot files
+6. More Stuff
 
 ## Tools
 
@@ -46,7 +47,7 @@ ssh-keygen -t rsa
 # Keep default name and enter passphrase
 ```
 
-Add SSH Key to  [GitHub](https://github.com/settings/ssh/new)
+Add SSH Key to [GitHub](https://github.com/settings/ssh/new)
 
 Copy ssh key to clipboard
 
