@@ -73,11 +73,7 @@ Host *
 
 ## Terminal
 
-In case the macOS default Terminal is used, skip the Warp Terminal related step.
-
-1. Download [Warp](https://www.warp.dev) Terminal
-   1. Login with [GitHub](github.com) for sharing
-2. Install fonts from [Nerd Font](https://www.nerdfonts.com).
+1. Install fonts from [Nerd Font](https://www.nerdfonts.com).
 
     ```shell
     brew tap homebrew/cask-fonts
@@ -92,7 +88,7 @@ In case the macOS default Terminal is used, skip the Warp Terminal related step.
     brew install --cask font-blex-mono-nerd-font
     ```
 
-3. Change prompt to [starship](https://starship.rs) by running
+2. Change prompt to [starship](https://starship.rs) by running
 
     ```shell
     # Install starship
@@ -111,52 +107,60 @@ In case the macOS default Terminal is used, skip the Warp Terminal related step.
     eval "$(starship init zsh)"
     ```
 
-4. Theme Warp Terminal
-
-    To use the **Starship** prompt in **Warp** right click in the warp prompt and select **use own prompt**.  
-    Also change font to `FiraCode Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
-
-    Need `.warp/themes` folder in the home directory
-
-    ```shell
-    mkdir -p ~/.warp/themes/
-    ```
-
-    Create custom theme with the [Warp Theme Generator](https://warp-themes.com) or use theme blow,
-    matching to the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night) theme.
-
-    ```text
-    accent: "#3d59a1"
-    background: "#1a1b26"
-    foreground: "#a9b1d6"
-    details: "darker"
-    terminal_colors:
-    normal:
-        black: "#616161"
-        red: "#ff8272"
-        green: "#b4fa72"
-        yellow: "#fefdc2"
-        blue: "#a5d5fe"
-        magenta: "#ff8ffd"
-        cyan: "#d0d1fe"
-        white: "#f1f1f1"
-    bright:
-        black: "#8e8e8e"
-        red: "#ffc4bd"
-        green: "#d6fcb9"
-        yellow: "#fefdd5"
-        blue: "#0054FF"
-        magenta: "#ffb1fe"
-        cyan: "#e5e6fe"
-        white: "#feffff"
-    ```
-
-5. Terminal Addons
+3. Terminal Addons
 
     ```shell
     # Better listing tool
     brew install exa
     ```
+
+### Warp Terminal
+
+Download [Warp](https://www.warp.dev) Terminal and login with [GitHub](github.com) for features like sharing code blocks.
+
+#### Theme
+
+To use the **Starship** prompt in **Warp** right click in the warp prompt and select **use own prompt**.  
+Also change font to `FiraCode Nerd Font` under **Settings** --> **Appearance**. Check the box to see all fonts.
+
+Need `.warp/themes` folder in the home directory
+
+```shell
+mkdir -p ~/.warp/themes/
+```
+
+Create custom theme with the [Warp Theme Generator](https://warp-themes.com) or use theme blow,
+matching to the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night) theme.
+
+```text
+accent: "#3d59a1"
+background: "#1a1b26"
+foreground: "#a9b1d6"
+details: "darker"
+terminal_colors:
+normal:
+    black: "#616161"
+    red: "#ff8272"
+    green: "#b4fa72"
+    yellow: "#fefdc2"
+    blue: "#a5d5fe"
+    magenta: "#ff8ffd"
+    cyan: "#d0d1fe"
+    white: "#f1f1f1"
+bright:
+    black: "#8e8e8e"
+    red: "#ffc4bd"
+    green: "#d6fcb9"
+    yellow: "#fefdd5"
+    blue: "#0054FF"
+    magenta: "#ffb1fe"
+    cyan: "#e5e6fe"
+    white: "#feffff"
+```
+
+#### Workflows
+
+<!-- TODO -->
 
 ## IDE
 
