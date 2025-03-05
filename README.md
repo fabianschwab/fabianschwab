@@ -8,7 +8,7 @@
 
 <p align="left">
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a>
-<a href="https://cloud.ibm.com" target="_blank" rel="noreferrer"><img src="https://api.iconify.design/simple-icons:ibmcloud.svg" width="36" height="36" alt="IBM Cloud" /></a>
+<a href="https://cloud.ibm.com" target="_blank" rel="noreferrer"><img src="./ic.svg" width="36" height="36" alt="IBM Cloud" /></a>
 <a href="https://azure.microsoft.com" target="_blank" rel="noreferrer"><img src="https://api.iconify.design/logos:microsoft-azure.svg" width="36" height="36" alt="Azure Cloud" /></a>
 </p>
 
